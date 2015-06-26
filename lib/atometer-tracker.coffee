@@ -1,7 +1,6 @@
 module.exports =
 class AtometerTracker
 
-
   constructor: (state, @atometerView) ->
         # probably should just listen within editor, but this is OK
         workspaceView = atom.views.getView(atom.workspace)

@@ -1,10 +1,9 @@
 {
   "name": "atometer",
   "main": "./lib/atometer",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "atom statistics tracker",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/twood02/atometer",
   "license": "MIT",
   "engines": {
@@ -17,6 +16,5 @@
       }
     }
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

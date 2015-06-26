@@ -18,11 +18,11 @@ class AtometerTracker
         # Create a tooltip and fill it with some mess
         @tooltip = atom.tooltips.add(@atometerView.element, title: =>
                 "<center><strong>Atometer</strong></center>
-                <div style=\"line-height: 26px;\">
-                Letters: <span class=\"keystroke\">#{@stats.letters}</span>
-                <BR />Arrows: <span class=\"keystroke\">#{@stats.moves}</span>
-                <BR />Symbols: <span class=\"keystroke\">#{@stats.symbols}</span>
-                <BR />Lines: <span class=\"keystroke\">#{@stats.lines}</span>
+                <div style=\"line-height: 26px; text-align:right;\">
+                Letters: <span class=\"keystroke\">#{@stats.letters}</span><BR />
+                Arrows: <span class=\"keystroke\">#{@stats.moves}</span><BR />
+                Symbols: <span class=\"keystroke\">#{@stats.symbols}</span><BR />
+                Lines: <span class=\"keystroke\">#{@stats.lines}</span>
                 </div>
                 "
                 )

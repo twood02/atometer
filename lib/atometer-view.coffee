@@ -6,9 +6,8 @@ class AtometerView
         @element = document.createElement('span')
         @element.textContent = "000000"
         @element.classList.add('badge')
-        # @element.classList.add('badge-small')
         @element.classList.add('atometer')
-        
+
 
   update: (keys) ->
           k = "000000" + keys

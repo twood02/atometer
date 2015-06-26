@@ -1,5 +1,7 @@
-# atometer package
+# atometer
 
-A short description of your package.
+A package for **Atom** to measure how many keys you type each day.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+## Todo:
+  * Report arrow key distance traveled in feet/miles/light years, rather than button presses.
+  * Make tooltip less blue.

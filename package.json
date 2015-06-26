@@ -1,0 +1,22 @@
+{
+  "name": "atometer",
+  "main": "./lib/atometer",
+  "version": "0.0.1",
+  "description": "atom statistics tracker",
+  "keywords": [
+  ],
+  "repository": "https://github.com/atom/atometer",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+  }
+}

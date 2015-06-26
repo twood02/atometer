@@ -1,11 +1,11 @@
 {
   "name": "atometer",
   "main": "./lib/atometer",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "atom statistics tracker",
   "keywords": [
   ],
-  "repository": "https://github.com/atom/atometer",
+  "repository": "https://github.com/twood02/atometer",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

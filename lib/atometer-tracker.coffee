@@ -1,19 +1,17 @@
 module.exports =
 class AtometerTracker
 
+  CURRENT_STATS_VERSION: 1
+  stats: null
+
   constructor: (state, @atometerView) ->
         # probably should just listen within editor, but this is OK
         workspaceView = atom.views.getView(atom.workspace)
         workspaceView.addEventListener 'keydown', => @track(event)
         if state
-                @stats = state
+                this.load(state)
         else
-                @stats =
-                        letters: 0
-                        moves: 0
-                        symbols: 0
-                        lines: 0
-        @atometerView.update(@stats.letters)
+                this.reset()
         # Create a tooltip and fill it with some mess
         @tooltip = atom.tooltips.add(@atometerView.element, title: =>
                 "<center><strong>Atometer</strong></center>
@@ -25,7 +23,24 @@ class AtometerTracker
                 </div>
                 "
                 )
-        console.log @atometerView.element
+
+  reset: ->
+        @stats =
+                letters: 0
+                moves: 0
+                symbols: 0
+                lines: 0
+                version: @CURRENT_STATS_VERSION
+        @atometerView.update(@stats.letters)
+
+  load: (oldstats) ->
+        @stats =
+                letters: oldstats.letters ? 0
+                moves: oldstats.moves ? 0
+                symbols: oldstats.symbols ? 0
+                lines: oldstats.lines ? 0
+                version: @CURRENT_STATS_VERSION
+        @atometerView.update(@stats.letters)
 
   # Save the stats measured thus far on exit
   serialize: ->

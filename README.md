@@ -9,11 +9,14 @@ Atometer tracks how many **letters**, **arrow keys**, **symbols**, and **new lin
 ![Atometer](https://raw.githubusercontent.com/twood02/scratchCode/master/misc/atometer.gif)
 
 ## Usage:
-  * Install at: https://atom.io/packages/atometer
+  * Install with `apm install atometer` or from Atom's package settings page.
   * Press keys on keyboard.
   * Look at bottom right of window. Hover for more details.
   * Reset stats for window by invoking the *Atometer: Reset* action from the Command Palette.
+  * Stats are tracked for each Atom project window.
+  * Package site: https://atom.io/packages/atometer
 
 ## Todo:
   * Report arrow key distance traveled in feet/miles/light years, rather than button presses.
+  * Graphs!
   * Make tooltip less blue.
